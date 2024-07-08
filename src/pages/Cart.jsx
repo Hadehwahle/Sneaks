@@ -6,7 +6,9 @@ function Cart() {
       <div className="cart-content">
         <div className="sub-cart">
           <div className="nike">
-            <img src="images/newnikemini.png" alt="nike" />
+            <div className="sub-nike">
+              <img src="images/newnikemini.png" alt="nike" />
+            </div>
             <div className="increment">
               <p>NIKE AIR MAX</p>
               <div>
@@ -23,7 +25,9 @@ function Cart() {
         </div>
         <div className="sub-cart">
           <div className="addidas">
-            <img src="images/addidasmini.png" alt="nike" />
+            <div className="sub-addidas">
+              <img src="images/addidasmini.png" alt="nike" />
+            </div>
             <div className="increment">
               <p>ADDIDAS</p>
               <div>
@@ -52,6 +56,7 @@ function Cart() {
             Estimated Tax <span>-</span>
           </p>
         </div>
+        <hr className="rule" />
         <h4>
           Total <span>$378.00</span>
         </h4>
