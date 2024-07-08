@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Racing+Sans+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+body {
+  box-sizing: border-box;
+  background: #fff9eb;
+}
+/* Navigation bar */
+header {
+  padding-top: 1rem;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.0125rem;
+}
+nav a {
+  color: #000;
+  display: flex;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+  color: #ffae5a;
+}
+.logo {
+  cursor: pointer;
+  color: #000;
+  font-family: "Racing Sans One";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* footer section */
+
+footer {
+  width: 100%;
+  background: #f6f0e2;
+  height: auto;
+}
+
+.footer-content {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-content h1 {
+  color: #000;
+  font-family: "Racing Sans One";
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-block: 2rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links div a {
+  text-decoration: none;
+  color: #000;
+  font-family: Inter;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding-block: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+.footer-links div a:hover {
+  color: #ffae5a;
+}
+.footer-links div h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 0 1rem 0;
+}
+.footer3 p {
+  width: 18rem;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+hr {
+  margin-block: 2rem;
+}
+.copyright {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer4 p {
+  color: #000;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.footer-input {
+  margin-top: 0.6rem;
+  background: #ffffffb3;
+  border-radius: 0.625rem;
+  width: 25rem;
+  padding: 0.4rem;
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-input input {
+  height: 2rem;
+  border: none;
+  outline: none;
+  flex: 0.9;
+  background: transparent;
+}
+
+.footer-input button {
+  border-radius: 0.25rem;
+  background: #ffae5a;
+  width: 5.125rem;
+  height: 1.6875rem;
+  border: none;
+  color: #fff;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-icon {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-icon img {
+  cursor: pointer;
+}
+.combo {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cart section */
+.cart {
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  padding-block: 5rem;
+}
+
+.sub-cart {
+  width: 40rem;
+  display: flex;
+  padding: 1.5rem 3.75rem 1.5rem 1.5625rem;
+  justify-content: space-between;
+  gap: 3.5625rem;
+  border-radius: 0.625rem;
+  background: #f6f0e2;
+  margin-bottom: 2rem;
+}
+.increment {
+  display: block;
+}
+.increment p {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 2.5rem;
+}
+.increment div {
+  display: flex;
+  gap: 0.2rem;
+}
+.increment img {
+  cursor: pointer;
+}
+.price {
+  align-self: baseline;
+}
+.price p {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 2.5rem;
+}
+.nike {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.addidas {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  font-family: Inter;
+}
+.summary {
+  border-radius: 0.625rem;
+  background: #f6f0e2;
+  display: flex;
+  width: 24.875rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 1.5rem;
+}
+.summary h1 {
+  font-family: Inter;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.summary-text {
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.summary-text p {
+  padding-bottom: 0.5rem;
+  display: flex;
+  width: 24.5rem;
+  justify-content: space-between;
+}
+
+.summary h4 {
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  width: 24.5rem;
+  justify-content: space-between;
+}
+.summary button {
+  border-radius: 0.625rem;
+  background: #ffae5a;
+  padding: 1.2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.015rem;
+  cursor: pointer;
+}
+
+.price img {
+  cursor: pointer;
+}
+/* Products page */
+.products {
+  padding-block: 4rem;
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 3rem;
+}
+
+.product {
+  position: relative;
+  padding: 2rem;
+  border-radius: 0.625rem;
+  background: #f6f0e2;
+  width: 20rem;
+  height: 17rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.cart-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.product .shoe-sneak {
+  max-width: 100%;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.name-price {
+  display: flex;
+  width: 20.75rem;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Media query */
+/* Products */
+@media (max-width: 1450px) {
+  .footer-links {
+    flex-direction: column-reverse;
+  }
+  .footer-input {
+    align-self: center;
+  }
+  .footer4 {
+    text-align: center;
+  }
+  .product {
+    width: 16rem;
+    height: 15rem;
+  }
+  .name-price {
+    width: 15rem;
+  }
+}
+@media (max-width: 1380px) {
+  .footer-links {
+    gap: 2rem;
+  }
+}
+@media (max-width: 1250px) {
+  nav {
+    display: none;
+  }
+  .logo h1,
+  .footer-content h1 {
+    font-size: 1.5rem;
+  }
+  .products {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .product {
+    width: 18rem;
+    height: 16rem;
+  }
+  .name-price {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 910px) {
+  .product {
+    width: 14rem;
+    height: 14rem;
+  }
+  .name-price {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .combo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .social-media {
+    display: none;
+  }
+  .footer3 p {
+    width: 5.7rem;
+    font-size: 0.6rem;
+  }
+  .copyright {
+    margin-left: 3rem;
+    text-align: left;
+  }
+  .footer-links div h3,
+  .footer-links div a {
+    font-size: 0.8rem;
+  }
+  .product {
+    width: 12rem;
+    height: 12rem;
+  }
+  .name-price {
+    width: 12rem;
+  }
+}
+@media (max-width: 680px) {
+  .footer-input {
+    width: 13rem;
+    padding-inline: 1rem;
+  }
+  .footer-input input::placeholder {
+    font-size: 0.7rem;
+  }
+  .footer-input button {
+    width: 4rem;
+    font-size: 0.7rem;
+  }
+  .footer-content h1 {
+    font-size: 1.2rem;
+  }
+  .search,
+  .user {
+    display: none;
+  }
+  .product {
+    width: 10rem;
+    height: 10rem;
+  }
+  .name-price {
+    font-size: 0.7rem;
+    width: 10rem;
+  }
+  .cart-icon {
+    width: 3rem;
+  }
+}
+@media (max-width: 575px) {
+  .copyright {
+    margin-left: 1.3rem;
+    font-size: 0.8rem;
+  }
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .product {
+    width: 19rem;
+    height: 18rem;
+  }
+  .name-price {
+    width: 18rem;
+  }
+}
+@media (max-width: 450px) {
+  .footer-icon {
+    justify-content: center;
+  }
+  .product {
+    width: 15rem;
+    height: 15rem;
+  }
+  .name-price {
+    width: 15rem;
+  }
+}
+@media (max-width: 370px) {
+  .product {
+    width: 12rem;
+    height: 12rem;
+  }
+  .name-price {
+    width: 12rem;
+  }
+}
