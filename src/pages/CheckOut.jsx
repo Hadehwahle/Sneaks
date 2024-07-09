@@ -48,7 +48,7 @@ function CheckOut() {
             <div>
               <input type="checkbox" /> <span>Paypal</span>
             </div>
-            <img src="images/pay.png" alt="paypal" />
+            <img src="../icons/paypal.svg" alt="paypal" />
           </div>
           <hr className="rule" />
           <div className="master-card">
@@ -57,7 +57,7 @@ function CheckOut() {
               <span> Credit or Debit Card</span>
             </div>
             <div>
-              <img src="images/mastercard.png" alt="visa" />
+              <img src="../icons/vismas.svg" alt="visa" />
             </div>
           </div>
           <hr className="rule" />
