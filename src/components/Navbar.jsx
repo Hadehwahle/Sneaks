@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import CustomIcon from "../../public/icons/CustomIcon";
 import CustomIcon2 from "../../public/icons/CustomIcon2";
 import CustomIcon3 from "../../public/icons/CustomIcon3";
@@ -12,7 +12,9 @@ function Navbar() {
   return (
     <header>
       <div className="logo">
-        <h1>SNEAKS</h1>
+        <Link to="/">
+          <h1>SNEAKS</h1>
+        </Link>
       </div>
       <nav>
         <NavLink>Home</NavLink>
