@@ -47,7 +47,7 @@ function Cart() {
         <h1>Summary</h1>
         <div className="summary-text">
           <p>
-            Subtotal <span>$370.00</span>
+            Subtotal <span>$490.00</span>
           </p>
           <p>
             Estimated Shipping <span>$8.00</span>
@@ -58,7 +58,7 @@ function Cart() {
         </div>
         <hr className="rule" />
         <h4>
-          Total <span>$378.00</span>
+          Total <span>$498.00</span>
         </h4>
         <NavLink to="checkout">
           <button type="submit">CHECKOUT</button>
