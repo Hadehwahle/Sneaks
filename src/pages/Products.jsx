@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 const sneaks = [
   {
@@ -61,23 +62,27 @@ function Products() {
     <>
       <section className="products">
         {sneaks.map((product) => (
-          <Shop data={product} key={sneaks.name} />
+          <Shop sneakObj={product} key={sneaks.name} />
         ))}
       </section>
     </>
   );
 }
-function Shop(props) {
+function Shop({ sneakObj }) {
   const navigate = useNavigate();
-  const { name, price, photoName, cart } = props.data;
+
   return (
     <div className="product">
-      <img onClick={() => navigate("/cart")} className="cart-icon" src={cart} />
+      <img
+        onClick={() => navigate("/cart")}
+        className="cart-icon"
+        src={sneakObj.cart}
+      />
 
-      <img className="shoe-sneak" src={photoName} />
+      <img className="shoe-sneak" src={sneakObj.photoName} />
       <div className="name-price">
-        <p>{name}</p>
-        <p className="dollar">${price}</p>
+        <p>{sneakObj.name}</p>
+        <p className="dollar">${sneakObj.price}</p>
       </div>
     </div>
   );
